@@ -121,33 +121,61 @@ The following is the output of “cat N50_stat” command (result of assembly-st
 > stats for SRR11906525_WGS_of_drosophila_melanogaster_female_adult_subreads.fastq
 > 
 > sum = 12016661679, n = 1437524, ave = 8359.28, largest = 99345
+> 
 > N50 = 13094, n = 321336
+> 
 > N60 = 11342, n = 419876
+> 
 > N70 = 9489, n = 535376
+> 
 > N80 = 7388, n = 678061
+> 
 > N90 = 4902, n = 874814
+> 
 > N100 = 50, n = 1437524
+> 
 > N_count = 0
+> 
 > Gaps = 0
+> 
 > stats for SRR12473480_Drosophila_PacBio_HiFi_UltraLow_subreads.fastq
+> 
 > sum = 25600110705, n = 2301518, ave = 11123.14, largest = 26462
+> 
 > N50 = 11151, n = 976954
+> 
 > N60 = 10586, n = 1212627
+> 
 > N70 = 10055, n = 1460775
+> 
 > N80 = 9530, n = 1722273
+> 
 > N90 = 8996, n = 1998694
+> 
 > N100 = 369, n = 2301518
+> 
 > N_count = 0
+> 
 > Gaps = 0
+> 
 > stats for SRR13070625_Nanopore_sequencing_of_Drosophila_melanogaster_whole_adult_flies_pooled_male_and_female_1.fastq
+> 
 > sum = 7133020037, n = 640215, ave = 11141.60, largest = 417450
+> 
 > N50 = 21491, n = 83878
+> 
 > N60 = 16642, n = 121685
+> 
 > N70 = 12824, n = 170598
+> 
 > N80 = 9526, n = 235039
+> 
 > N90 = 6112, n = 327186
+> 
 > N100 = 1, n = 640215
+> 
 > N_count = 0
+> 
 > Gaps = 0
 > 
 
