@@ -78,6 +78,7 @@ Download the required public datasets
 
   ```
   chmod +x download-files.sh
+
   ./download-files.sh
   ```
 
@@ -85,5 +86,6 @@ Visualizing read-length distribution
 
   ```
   chmod +x read-length-table.sh
+  
   ./read-length-table.sh
   ```
