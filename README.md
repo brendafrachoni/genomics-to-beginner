@@ -16,8 +16,6 @@ Press ENTER to read its license, and then enter yes to agree with it
 
 Specify the path to install your conda
 
-We used the latest miniconda; python 3.9.5, conda version 4.11.0
-
 Add the conda to your PATH environment variable
 
   ```
@@ -86,6 +84,20 @@ Visualizing read-length distribution
 
   ```
   chmod +x read-length-table.sh
-  
+
   ./read-length-table.sh
   ```
+
+Install R packages
+
+```
+  R
+
+  install.packages("ggplot2")
+
+  install.packages("dplyr")
+
+  install.packages("cowplot")
+
+  q()
+```
