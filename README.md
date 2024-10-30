@@ -83,5 +83,5 @@ Download the required public datasets
 Visualizing read-length distribution
 
   ```
-  ./read-length-distribution.sh
+  ./read-length-table.sh
   ```
