@@ -77,11 +77,13 @@ We recommend that you create a conda environment using the specified versions of
 Download the required public datasets
 
   ```
+  chmod +x download-files.sh
   ./download-files.sh
   ```
 
 Visualizing read-length distribution
 
   ```
+  chmod +x read-length-table.sh
   ./read-length-table.sh
   ```
