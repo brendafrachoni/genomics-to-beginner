@@ -2,75 +2,23 @@
 
 ## A beginner’s guide to assembling a draft genome and analyzing structural variants with long-read sequencing technologies
 
-Download lastest Miniconda3
+# 1. Environment setup and datasets download
 
-  ```
-  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+Create a conda environment using the specified versions of the following packages to avoid package dependency issues. See more at *conda-environment-setup.md*
 
-  chmod +x Miniconda3-latest-Linux-x86_64.sh
+´kat=2.4.1´
+Tools for analyzing DNA/RNA sequencing data by examining k-mer counts. ´kat´ helps evaluate the quality and completeness of genome assemblies by comparing k-mer profiles of the assembled genome to raw sequencing reads.
 
-  bash Miniconda3-latest-Linux-x86_64.sh
-  ```
+´trinity=2.13.2´
+Provides a powerful tool for de novo transcriptome assembly from RNA sequencing (RNA-Seq) data.  Essentially, it takes short RNA-Seq reads (typically from Illumina platforms) and reconstructs the full-length transcripts that were present in the original RNA sample. In genome assembly projects, Trinity-assembled transcripts can be used as long reads to scaffold contigs and fill gaps in the draft genome, improving its contiguity and completeness.
 
-Press ENTER to read its license, and then enter yes to agree with it
+´assembly-stats bioawk shasta canu hifiasm´
 
-Specify the path to install your conda
 
-Add the conda to your PATH environment variable
-
-  ```
-  </path_to_your_conda>/bin/conda init
-
-  source ∼/.bashrc
-  ```
-
-You can see that your command line has been changed to display “(base)”
-
-e.g.,(base) username@hostname:∼$
-
-if (base) doesn’t appear even after running “source ∼/.bashrc”, then restart your terminal prompt
-
-  ```
-  conda update -n base -c defaults conda
-
-  conda config --add channels conda-forge
-
-  conda config --add channels bioconda
-
-  conda create -n assembly
-
-  conda activate assembly
-  ```
-
-The “(base)” should be changed to “(assembly)”
-
-e.g.,(assembly) username@hostname:∼$
-
-You can deactivate your conda environment using
-
-  ```
-  conda deactivate
-  ```
-
-We recommend that you create a conda environment using the specified versions of the following packages to avoid package dependency issues
-
-  ```
-  conda activate assembly
-
-  conda install -c bioconda kat=2.4.1
-
-  conda install -c bioconda trinity=2.13.2
-
-  conda install -c bioconda assembly-stats bioawk shasta canu hifiasm
-
-  conda install -c bioconda hisat2
-
-  conda install -c conda-forge -c bioconda busco=5.2.2
-
-  conda install -c bioconda ragtag
-
-  conda install -c bioconda svim svim-asm
-  ```
+hisat2
+busco=5.2.2
+ragtag
+svim svim-asm
 
 Download the required public datasets
 
@@ -80,7 +28,7 @@ Download the required public datasets
   ./download-files.sh
   ```
 
-Visualizing read-length distribution
+# 2. Visualizing read-length distribution
 
   ```
   chmod +x read-length-table.sh
@@ -88,19 +36,13 @@ Visualizing read-length distribution
   ./read-length-table.sh
   ```
 
-Install R packages
+
+Install R packages "ggplot2", "dplyr", "cowplot" and run the script.
 
   ```
-  R
-
-  install.packages("ggplot2")
-
-  install.packages("dplyr")
-
-  install.packages("cowplot")
-
-  q()
+  Rscript read-length-distribution.R
   ```
+
 
 Calculate N50 statistics using assembly-stats
 
