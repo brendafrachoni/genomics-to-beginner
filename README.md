@@ -6,13 +6,15 @@
 
 Create a conda environment using the specified versions of the following packages to avoid package dependency issues. See more at *conda-environment-setup.md*
 
-´kat=2.4.1´
-Tools for analyzing DNA/RNA sequencing data by examining k-mer counts. ´kat´ helps evaluate the quality and completeness of genome assemblies by comparing k-mer profiles of the assembled genome to raw sequencing reads.
+kat=2.4.1
 
-´trinity=2.13.2´
+Tools for analyzing DNA/RNA sequencing data by examining k-mer counts. kat helps evaluate the quality and completeness of genome assemblies by comparing k-mer profiles of the assembled genome to raw sequencing reads.
+
+trinity=2.13.2
+
 Provides a powerful tool for de novo transcriptome assembly from RNA sequencing (RNA-Seq) data.  Essentially, it takes short RNA-Seq reads (typically from Illumina platforms) and reconstructs the full-length transcripts that were present in the original RNA sample. In genome assembly projects, Trinity-assembled transcripts can be used as long reads to scaffold contigs and fill gaps in the draft genome, improving its contiguity and completeness.
 
-´assembly-stats bioawk shasta canu hifiasm´
+assembly-stats bioawk shasta canu hifiasm
 
 
 hisat2
