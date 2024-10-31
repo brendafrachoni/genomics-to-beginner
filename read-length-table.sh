@@ -12,4 +12,4 @@ bioawk -c fastx '{print "PacBio_HiFi," length($seq)}' SRR12473480_Drosophila_Pac
 
 bioawk -c fastx '{print "ONT," length($seq)}' SRR13070625_Nanopore_sequencing_of_Drosophila_melanogaster_whole_adult_flies_pooled_male_and_female_1.fastq.gz >> length.csv
 
-echo "Status de saída: $?"
+echo "Output status: $?"

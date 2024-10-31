@@ -20,4 +20,4 @@ assembly-stats SRR12473480_Drosophila_PacBio_HiFi_UltraLow_subreads.fastq >> N50
 
 assembly-stats SRR13070625_Nanopore_sequencing_of_Drosophila_melanogaster_whole_adult_flies_pooled_male_and_female_1.fastq >> N50_stat
 
-echo "Status de saída: $?"
+echo "Output status: $?"
