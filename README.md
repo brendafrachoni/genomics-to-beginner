@@ -242,4 +242,75 @@ The following is the output of “cat N50_stat” command (result of assembly-st
 > Gaps = 0
 > 
 
+# 4. Approximate genome-size estimation
 
+The estimated genome size of your species can be found in public databases:
+
+- Animal: Animal Genome Size Database (http://www.genomesize.com/index.php)
+
+- Plant: Plant DNA C-values Database (https://cvalues.science.kew.org/
+
+If you have short-read DNA sequencing data, the k-mer-based genome size estimation can be applied:
+
+```
+  chmod +x genome-size-estimation.sh
+
+  ./genome-size-estimation.sh
+```
+You can check the kat output by typing “cat genome_size.txt” in your terminal
+
+```
+cat genome_size.txt
+```
+
+Genome size can be estimated using the short-read DNA sequencing data
+
+>
+> dme_size
+> 
+> Estimated genome size: 166.18 Mbp
+> 
+> Estimated heterozygous rate: 0.41%
+>
+
+## Calculate the transcript-based coverage using short-read DNA/RNA sequencing data.
+
+Critical: For an accurate estimation, high-quality transcriptome assembly is required.
+
+Conduct de novo transcriptome assembly using Trinity (Grabherr et al., 2011)
+
+```
+  chmod +x denovo-transcriptome-assembly.sh
+
+  ./denovo-transcriptome-assembly.sh
+```
+
+You can assess the assembled quality of transcriptomes using assembly-stat
+
+```
+  assembly-stats Dmel.trinity.Trinity.fasta
+```
+
+The following is the output of the “assembly-stats Dmel.trinity.Trinity.fasta” command (result of assembly-stats)
+
+>
+> stats for Dmel.trinity.Trinity.fasta
+>
+> sum = 72662995, n = 67038, ave = 1083.91, largest = 27780
+> 
+> N50 = 2454, n = 8357
+>
+> N60 = 1816, n = 11781
+>
+> N70 = 1180, n = 16695
+>
+> N80 = 653, n = 25022
+>
+> N90 = 364, n = 40185
+>
+> N100 = 201, n = 67038
+>
+> N_count = 0
+>
+> Gaps = 0
+>
