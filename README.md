@@ -273,7 +273,7 @@ Genome size can be estimated using the short-read DNA sequencing data
 > Estimated heterozygous rate: 0.41%
 >
 
-## Calculate the transcript-based coverage using short-read DNA/RNA sequencing data.
+### Calculate the transcript-based coverage using short-read DNA/RNA sequencing data.
 
 Critical: For an accurate estimation, high-quality transcriptome assembly is required.
 
